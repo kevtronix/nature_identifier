@@ -29,8 +29,13 @@
 
 ## Sprints 
 
-    Sprint 1: Set up the project specifications, identify machine learning model, research core ml and converting model from pytorch to core ml.  
-    Sprint 2: Build and refine camera screen and detail processing screen.
-    Sprint 3: Implement machine learning model and image processing.
-    Sprint 4: Debug, test application, and if time permits, add ar capabilites to the application.
+    Sprint 1: Set up the project specifications, build the camera screen
+   
+    Sprint 2: identify machine learning model, research core ml and converting model from pytorch to core ml.  
+    
+    Sprint 3: Build and refine camera screen and detail processing screen.
+   
+    Sprint 4: Implement machine learning model and image processing.
+    
+    Sprint 5: Test and refine application. Add more refined views. If time allows, incorporate more ar functionality.
 
