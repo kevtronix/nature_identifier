@@ -105,9 +105,8 @@ Nature ID is an application that allows users to take pictures of plants and ani
 
     | Property      | Type     | Description |
     | ------------- | -------- | ------------|
-    | identificationID | String | unique id for the identification (default field) |
     | imageID       | String   | unique id for the image (default field) |
-    | output       | String   | output of the machine learning model | 
+    | output        | String   | output of the machine learning model | 
 
 ### Networking
 
@@ -121,11 +120,15 @@ This application does not require a network connection as the machine learning m
 
 ## Sprints 
 
-[x] Sprint 1: Set up the project specifications, build the camera screen 
-[ ] Sprint 2: identify machine learning model, research core ml and converting model from pytorch to core ml.  
-[ ] Sprint 3: Build and refine camera screen and detail processing screen.
-[ ] Sprint 4: Implement machine learning model and image processing.
-[ ] Sprint 5: Test and refine application. Add more refined views. If time allows, incorporate more ar functionality.
+1. [x] Sprint 1: Set up the project specifications, build the camera screen 
+
+2. [] Sprint 2: identify machine learning model, research core ml and converting model from pytorch to core ml.  
+
+3. [] Sprint 3: Build and refine camera screen and detail processing screen.
+
+4. [] Sprint 4: Implement machine learning model and image processing.
+
+5. [] Sprint 5: Test and refine application. Add more refined views. If time allows, incorporate more ar functionality.
 
 
 
