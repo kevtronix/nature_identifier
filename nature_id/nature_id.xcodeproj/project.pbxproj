@@ -13,6 +13,13 @@
 		2467602B2BCE15D6008A05C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2467602A2BCE15D6008A05C4 /* Base */; };
 		2467602D2BCE15D8008A05C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2467602C2BCE15D8008A05C4 /* Assets.xcassets */; };
 		246760302BCE15D8008A05C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2467602F2BCE15D8008A05C4 /* Base */; };
+		24D3A7C02BD6D39100187624 /* PlantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7BF2BD6D39100187624 /* PlantModels.swift */; };
+		24D3A7C22BD6D3C400187624 /* PlantAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7C12BD6D3C400187624 /* PlantAPIService.swift */; };
+		24D3A7C42BD6D53D00187624 /* UImagewithExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7C32BD6D53D00187624 /* UImagewithExtensions.swift */; };
+		24D3A7C62BD6DABE00187624 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7C52BD6DABE00187624 /* ProcessingViewController.swift */; };
+		24D3A7C82BD6DAE100187624 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7C72BD6DAE100187624 /* ResultsViewController.swift */; };
+		24D3A7CA2BD6FA3C00187624 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7C92BD6FA3C00187624 /* PlantDetailViewController.swift */; };
+		24D3A7D02BD7038600187624 /* CombinedPlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3A7CF2BD7038600187624 /* CombinedPlantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,14 @@
 		2467602C2BCE15D8008A05C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2467602F2BCE15D8008A05C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246760312BCE15D8008A05C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D3A7BC2BD6C6BB00187624 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		24D3A7BF2BD6D39100187624 /* PlantModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModels.swift; sourceTree = "<group>"; };
+		24D3A7C12BD6D3C400187624 /* PlantAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantAPIService.swift; sourceTree = "<group>"; };
+		24D3A7C32BD6D53D00187624 /* UImagewithExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UImagewithExtensions.swift; sourceTree = "<group>"; };
+		24D3A7C52BD6DABE00187624 /* ProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
+		24D3A7C72BD6DAE100187624 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		24D3A7C92BD6FA3C00187624 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		24D3A7CF2BD7038600187624 /* CombinedPlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedPlantCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +72,16 @@
 			isa = PBXGroup;
 			children = (
 				246760232BCE15D6008A05C4 /* AppDelegate.swift */,
+				24D3A7BF2BD6D39100187624 /* PlantModels.swift */,
+				24D3A7C12BD6D3C400187624 /* PlantAPIService.swift */,
 				246760252BCE15D6008A05C4 /* SceneDelegate.swift */,
 				246760272BCE15D6008A05C4 /* ViewController.swift */,
+				24D3A7CF2BD7038600187624 /* CombinedPlantCell.swift */,
+				24D3A7C52BD6DABE00187624 /* ProcessingViewController.swift */,
+				24D3A7C72BD6DAE100187624 /* ResultsViewController.swift */,
+				24D3A7C92BD6FA3C00187624 /* PlantDetailViewController.swift */,
+				24D3A7C32BD6D53D00187624 /* UImagewithExtensions.swift */,
+				24D3A7BC2BD6C6BB00187624 /* Config.xcconfig */,
 				246760292BCE15D6008A05C4 /* Main.storyboard */,
 				2467602C2BCE15D8008A05C4 /* Assets.xcassets */,
 				2467602E2BCE15D8008A05C4 /* LaunchScreen.storyboard */,
@@ -138,9 +161,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D3A7C22BD6D3C400187624 /* PlantAPIService.swift in Sources */,
 				246760282BCE15D6008A05C4 /* ViewController.swift in Sources */,
+				24D3A7C62BD6DABE00187624 /* ProcessingViewController.swift in Sources */,
 				246760242BCE15D6008A05C4 /* AppDelegate.swift in Sources */,
 				246760262BCE15D6008A05C4 /* SceneDelegate.swift in Sources */,
+				24D3A7CA2BD6FA3C00187624 /* PlantDetailViewController.swift in Sources */,
+				24D3A7C02BD6D39100187624 /* PlantModels.swift in Sources */,
+				24D3A7C42BD6D53D00187624 /* UImagewithExtensions.swift in Sources */,
+				24D3A7D02BD7038600187624 /* CombinedPlantCell.swift in Sources */,
+				24D3A7C82BD6DAE100187624 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

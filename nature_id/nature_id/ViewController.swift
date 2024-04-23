@@ -1,5 +1,5 @@
-import AVFoundation
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var captureSession: AVCaptureSession?
@@ -12,9 +12,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupLiveCameraView()
         setupCameraButton()
-        setupPreviewImageView()
     }
-    
     func setupPreviewImageView() {
         previewImageView = UIImageView(frame: CGRect(x: 20, y: 20, width: 100, height: 100))
         previewImageView.contentMode = .scaleAspectFit
@@ -76,30 +74,41 @@ class ViewController: UIViewController {
     @objc func takePicture() {
         let settings = AVCapturePhotoSettings()
         settings.flashMode = .auto
-        
-        
-        if let photoOutput = photoOutput {
-            photoOutput.capturePhoto(with: settings, delegate: self)
-        }
+        photoOutput?.capturePhoto(with: settings, delegate: self)
     }
 }
 
 extension ViewController: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
-        guard error == nil else {
-            print("Error capturing photo: \(String(describing: error))")
+        guard let imageData = photo.fileDataRepresentation(), let image = UIImage(data: imageData) else {
+            print("Error capturing photo: \(error?.localizedDescription ?? "Unknown")")
             return
         }
-
-        if let imageData = photo.fileDataRepresentation(), let image = UIImage(data: imageData) {
-            print("Photo captured successfully")
+        DispatchQueue.main.async {
+            self.showProcessingScreen()
+        }
+        PlantAPIService.shared.uploadImage(image: image, urlString: "https://plant.id/api/v3/identification?details=common_names,url,description,taxonomy,rank,gbif_id,inaturalist_id,image,synonyms,edible_parts,watering&language=en") { response in
             DispatchQueue.main.async {
-                self.previewImageView.image = image
-                
+                print(response)
+                self.showResultScreen(response)
             }
-        } else {
-            print("Failed to convert photo data to UIImage")
+        }
+    }
+
+    func showProcessingScreen() {
+        let processingVC = ProcessingViewController()
+        self.present(processingVC, animated: true, completion: nil)
+    }
+
+    func showResultScreen(_ response: PlantIdentificationResponse?) {
+        dismiss(animated: true) {
+            guard let results = response?.result.classification.suggestions else { return }
+            let resultsVC = ResultsViewController()
+            resultsVC.plantSuggestions = results
+            self.navigationController?.pushViewController(resultsVC, animated: true)
         }
     }
 }
+
+
 

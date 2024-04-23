@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  nature_id
+//
+//  Created by Kevin Abraham on 4/22/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = https://plant.id/api/v3/identification
+TOKEN = OLA1z5MvBcbLGLemKwJzkCw88O07oBcGrINoaOD52e7QBrAZQc

@@ -115,7 +115,7 @@ This application does not require a network connection as the machine learning m
 
 ## Demo 
 
-![Identification Application Demo](./demo.gif)
+![Identification Application Demo](./demo_2.gif)
 
 
 ## Sprints 
@@ -124,7 +124,7 @@ This application does not require a network connection as the machine learning m
 
 2. [] Sprint 2: identify machine learning model, research core ml and converting model from pytorch to core ml.  
 
-3. [] Sprint 3: Build and refine camera screen and detail processing screen.
+3. [x] Sprint 3: Build and refine camera screen and detail processing screen. Incoporate images with Plant.id API.
 
 4. [] Sprint 4: Implement machine learning model and image processing.
 
@@ -133,8 +133,9 @@ This application does not require a network connection as the machine learning m
 
 ## Progress 
 
-### Completed  (1/5)
+### Completed  (2/5)
 
 1. Set up project specifications and built the camera screen. The challenges that I faced were getting the camera to work and getting the image to be displayed on the screen. I was able to overcome these challenges by using  AVFoundation to get the camera to work and using a UIImageView to display the image on the screen. However, the caveat was that I now needed to use my actual device for testing as the simulator does not have a camera. Overall, all of the objectives outlined in the first sprint were completed. Looking forward to the next sprint, I aim to research the machine learning model and how to convert it to Core ML.
 
 
+2. Incorporated images with Plant.id API, in order to provide accurate identification possibilities of various different plants in addition to providing more information about each possible identification. In addition, much of the time was spent refining the UI and attempting to provide a clean and modern look. The biggest challenge was working with the Plant.id API and handleing the data properly because of the the inconsistent data that was returned, which meant that I had to dive head first into optionals. At the moment, the API incorporation allows for the application to function well, however this work will be offloaded onto the machine learning model once it is implemented. Also considering improvements, I can have two AI agents working in an assembly line, the first identifying whether or not it is a plant, and the second identifying the specific plant. This would allow for a more accurate identification process as one is a more generalized model and the other could be fine tuned to deal with plant data. Seeing how the api tries to identify plants from random objects, I see this as a really good area of improvement. 
