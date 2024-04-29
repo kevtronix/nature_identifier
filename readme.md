@@ -5,7 +5,7 @@
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
+
 
 ## Overview
 
@@ -81,14 +81,11 @@ Nature ID is an application that allows users to take pictures of plants and ani
     * Camera Screen
 
 
-## Wireframes
+## Data Flow and WireFrame
 
 ![Identification Application Wireframe](./wireframe.png)
 
 
-## Schema 
-
-[This section will be completed in Unit 9]
 
 ### Models
 
@@ -110,6 +107,11 @@ Nature ID is an application that allows users to take pictures of plants and ani
 
 ### Networking
 
+### Current Implementation 
+The application connects with Plant.ID API to accurately identify Plants with about a 70% accuracy for the first result and within 90% accuracy within the first 3 results.
+
+
+#### Future Plans
 This application does not require a network connection as the machine learning model will be stored on the device and the images will be processed on the device offline. If the application were to include networking then I would take the images and send it over to one of the several Image Recognition APIs available such as Google Vision API, Microsoft Azure Computer Vision API, or IBM Watson Visual Recognition API. The API would then return the output of the machine learning model which would be displayed to the user.
 
 
