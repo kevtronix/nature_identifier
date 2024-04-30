@@ -117,7 +117,7 @@ This application does not require a network connection as the machine learning m
 
 ## Demo 
 
-![Identification Application Demo](./demo_2.gif)
+![Identification Application Demo](./demo_3.gif)
 
 
 ## Sprints 
