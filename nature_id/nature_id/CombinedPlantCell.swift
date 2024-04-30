@@ -48,7 +48,7 @@ class CombinedPlantCell: UICollectionViewCell {
     }
 
     func configure(with suggestion: Suggestion) {
-        titleLabel.text = suggestion.name
+        titleLabel.text = "\(suggestion.name) : \(suggestion.probability)% Match"
         if let urlString = suggestion.details.image?.value {
             imageView.loadImage(from: urlString)
         }

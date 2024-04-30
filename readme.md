@@ -83,8 +83,8 @@ Nature ID is an application that allows users to take pictures of plants and ani
 
 ## Data Flow and WireFrame
 
-![Identification Application Wireframe](./wireframe.png)
-
+## Data Flow
+![Identification Application Wireframe](./dataflow.png)
 
 
 ### Models
@@ -126,11 +126,11 @@ This application does not require a network connection as the machine learning m
 
 2. [] Sprint 2: identify machine learning model, research core ml and converting model from pytorch to core ml.  
 
-3. [x] Sprint 3: Build and refine camera screen and detail processing screen. Incoporate images with Plant.id API.
+3. [x] Sprint 3 and 4: Build and refine camera screen and detail processing screen. Incoporate images with Plant.id API.
 
-4. [] Sprint 4: Implement machine learning model and image processing.
+4. [] Sprint 5: Implement machine learning model and image processing.
 
-5. [] Sprint 5: Test and refine application. Add more refined views. If time allows, incorporate more ar functionality.
+5. [] Sprint 6: Test and refine application. Add more refined views. If time allows, incorporate more ar functionality.
 
 
 ## Progress 
@@ -141,3 +141,5 @@ This application does not require a network connection as the machine learning m
 
 
 2. Incorporated images with Plant.id API, in order to provide accurate identification possibilities of various different plants in addition to providing more information about each possible identification. In addition, much of the time was spent refining the UI and attempting to provide a clean and modern look. The biggest challenge was working with the Plant.id API and handleing the data properly because of the the inconsistent data that was returned, which meant that I had to dive head first into optionals. At the moment, the API incorporation allows for the application to function well, however this work will be offloaded onto the machine learning model once it is implemented. Also considering improvements, I can have two AI agents working in an assembly line, the first identifying whether or not it is a plant, and the second identifying the specific plant. This would allow for a more accurate identification process as one is a more generalized model and the other could be fine tuned to deal with plant data. Seeing how the api tries to identify plants from random objects, I see this as a really good area of improvement. 
+
+3. Added App Launch Image, Icon, and changed results display showing each probability of the displayed plant for identification. Along with this, have done some more research on machine learning models and have decided on efficientnet as it is a lightweight model that should be able to be used on mobile devices. This week there were no challenges as the objectives were mainly optimization and research. Looking forward to the next sprint, I aim to implement the machine learning model and image processing.
