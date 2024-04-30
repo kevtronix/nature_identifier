@@ -135,7 +135,7 @@ This application does not require a network connection as the machine learning m
 
 ## Progress 
 
-### Completed  (3/5)
+### Completed  (3/6)
 
 1. Set up project specifications and built the camera screen. The challenges that I faced were getting the camera to work and getting the image to be displayed on the screen. I was able to overcome these challenges by using  AVFoundation to get the camera to work and using a UIImageView to display the image on the screen. However, the caveat was that I now needed to use my actual device for testing as the simulator does not have a camera. Overall, all of the objectives outlined in the first sprint were completed. Looking forward to the next sprint, I aim to research the machine learning model and how to convert it to Core ML.
 
